@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/whxte/uin-campus/build/debug",
+  "command": "/usr/bin/c++ -DUIN_VERSION=\\\"0.1.0\\\" -I/home/whxte/uin-campus/include -g -std=gnu++23 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/uincampus_core.dir/src/version.cpp.o -c /home/whxte/uin-campus/src/version.cpp",
+  "file": "/home/whxte/uin-campus/src/version.cpp",
+  "output": "/home/whxte/uin-campus/build/debug/CMakeFiles/uincampus_core.dir/src/version.cpp.o"
+},
+{
+  "directory": "/home/whxte/uin-campus/build/debug",
+  "command": "/usr/bin/c++ -I/home/whxte/uin-campus/include -g -std=gnu++23 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -fsanitize=address,undefined -fno-omit-frame-pointer -o CMakeFiles/uin-campus.dir/app/main.cpp.o -c /home/whxte/uin-campus/app/main.cpp",
+  "file": "/home/whxte/uin-campus/app/main.cpp",
+  "output": "/home/whxte/uin-campus/build/debug/CMakeFiles/uin-campus.dir/app/main.cpp.o"
+}
+]
