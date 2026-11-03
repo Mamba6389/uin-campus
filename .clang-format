@@ -1,6 +1,11 @@
-BasedOnstyle: LLVM
+BasedOnStyle: LLVM
 IndentWidth: 4
 ColumnLimit: 100
-AccessModifierOffset: -2
-AlignAfterOpenBracket: Align
-AllowShortFunctionsOnASingleLine: Empty
+PointerAlignment: Left
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: true
+  AfterClass: false
+  AfterStruct: false
+  AfterControlStatement: Never
+AllowShortFunctionsOnASingleLine: Inline
