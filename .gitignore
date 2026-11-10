@@ -1,0 +1,12 @@
+build/
+cmake-build-*/
+out/
+complie_commands.json
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.exe
+.cache/
