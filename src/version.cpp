@@ -1,7 +1,8 @@
 #include "uincampus/version.hpp"
 
 namespace uin {
-std::string_view version() {
-  return UIN_VERSION; // Macro fournie par CMake
+std::string_view version()
+{
+    return UIN_VERSION; // Macro fournie par CMake
 }
 } // namespace uin
