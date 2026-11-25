@@ -1,7 +1,4 @@
-#include "uincampus/calculs.hpp"
-#include "uincampus/regles.hpp"
-#include "uincampus/saisie.hpp"
-#include "uincampus/version.hpp"
+#include "uincampus/uincampus.hpp"
 #include <cstdlib>
 #include <format>
 #include <print>
@@ -14,7 +11,7 @@ enum class Suite { Continuer, Terminer, Erreur };
 void afficherAide()
 {
     std::println("Usage : uin-campus [--version] [--aide]");
-    std::println(" --version affiche la version");
+    std::println(" --version affiche la version et les informations de construction");
     std::println(" --aide affiche cette aide");
 }
 [[nodiscard]] Suite traiterOptions(std::span<char*> arguments)
@@ -24,7 +21,7 @@ void afficherAide()
     }
     for (const std::string_view option : arguments.subspan(1)) {
         if (option == "--version") {
-            std::println("uin-campus {}", uin::version());
+            std::println("{}", uin::informationsConstruction());
             return Suite::Terminer;
         }
         if (option == "--aide") {
@@ -37,11 +34,14 @@ void afficherAide()
     }
     return Suite::Continuer;
 }
+// afficherLigne : inchangée par rapport au chapitre 5
+} // namespace
+// main : inchangé par rapport au chapitre 5
 void afficherLigne(std::string_view libelle, std::string_view valeur)
 {
     std::println("{:<24}{:>20}", libelle, valeur);
-}
 } // namespace
+
 int main(int argc, char* argv[])
 {
     switch (traiterOptions(std::span{argv, static_cast<std::size_t>(argc)})) {
